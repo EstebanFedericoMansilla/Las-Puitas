@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Puitas - Serie Animada</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS CSS -->    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Estilos personalizados -->
+    <style>
+        :root {
+            --primary-color: #FF6B6B;
+            --secondary-color: #4ECDC4;
+            --dark-color: #2C3E50;
+            --light-color: #F7F9F9;
+        }
+
+        body {
+            padding-top: 56px;
+            font-family: 'Arial', sans-serif;
+            background-color: var(--light-color);
+            color: var(--dark-color);
+        }
+
+        .navbar {
+            background-color: rgba(44, 62, 80, 0.95) !important;
+        }
+
+        .hero-section {
+            min-height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                        url('Presentacion de Las puitas_00143.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .character-card {
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .character-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .video-section {
+            background-color: var(--dark-color);
+            padding: 5rem 0;
+            color: white;
+        }
+
+        .custom-btn {
+            background-color: var(--primary-color);
+            border: none;
+            padding: 10px 25px;
+            border-radius: 25px;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .custom-btn:hover {
+            background-color: var(--secondary-color);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Las Puitas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="voces.html">Voces</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#personajes">Personajes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#video">Video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#prensa">Prensa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="display-1 mb-4" data-aos="fade-down">Las Puitas</h1>
+            <p class="lead mb-4" data-aos="fade-up">Una familia musical que rockea la vida</p>
+            <button class="custom-btn" data-aos="zoom-in">¡Conoce a la familia!</button>
+        </div>
+    </section>
+
+    <!-- Sección de Personajes -->
+    <section class="py-5" id="personajes">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Conoce a la Familia Púa</h2>
+            <div class="row">
+                <!-- Papá Púa -->
+                <div class="col-md-4" data-aos="flip-left">
+                    <div class="character-card shadow">
+                        <img src="Presentacion de Las puitas_00143.png" class="card-img-top" alt="Papá Púa">
+                        <div class="card-body">
+                            <h5 class="card-title">Papá Púa</h5>
+                            <p class="card-text">El patriarca rockero de la familia</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mamá Púa -->
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
+                    <div class="character-card shadow">
+                        <img src="Presentacion de Las puitas_00143.png" class="card-img-top" alt="Mamá Púa">
+                        <div class="card-body">
+                            <h5 class="card-title">Mamá Púa</h5>
+                            <p class="card-text">El corazón musical de la familia</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ricky -->
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="400">
+                    <div class="character-card shadow">
+                        <img src="Presentacion de Las puitas_00143.png" class="card-img-top" alt="Ricky">
+                        <div class="card-body">
+                            <h5 class="card-title">Ricky</h5>
+                            <p class="card-text">El rockero adolescente</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Video -->
+    <section class="video-section" id="video">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">¡Mira el adelanto!</h2>
+            <div class="ratio ratio-16x9" data-aos="zoom-in">
+                <video controls>
+                    <source src="Presentacion de Las puitas.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+        </div>    </section>
+
+    <!-- Sección de Prensa -->
+    <section class="py-5" id="prensa">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Sala de Prensa</h2>
+            <div class="row g-4">
+                <div class="col-md-6" data-aos="fade-right">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Kit de Prensa</h5>
+                            <p class="card-text">Descarga nuestro kit de prensa que incluye logos, imágenes y material promocional.</p>
+                            <a href="#" class="custom-btn">Descargar Kit</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Contacto para Medios</h5>                            <p class="card-text">Para entrevistas y consultas de prensa, contáctanos:</p>
+                            <p class="mb-2"><strong>Email:</strong> prensa@laspuitas.com</p>
+                            <p><strong>Tel:</strong> +5492664024390</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section class="py-5 bg-light" id="contacto">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Contacto</h2>
+            <div class="row justify-content-center">                <div class="col-md-8" data-aos="zoom-in">
+                    <form action="https://formspree.io/f/mvgzqkpv" method="POST" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <input type="text" name="name" class="form-control" placeholder="Nombre" required>
+                            <div class="invalid-feedback">
+                                Por favor ingresa tu nombre
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" name="email" class="form-control" placeholder="Email" required>
+                            <div class="invalid-feedback">
+                                Por favor ingresa un email válido
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <textarea name="message" class="form-control" rows="4" placeholder="Mensaje" required></textarea>
+                            <div class="invalid-feedback">
+                                Por favor escribe tu mensaje
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="custom-btn">Enviar Mensaje</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Las Puitas</h5>
+                    <p>Una serie animada para toda la familia.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Síguenos</h5>
+                    <div class="social-links">
+                        <a href="https://instagram.com/laspuitas" class="text-light me-3" target="_blank">
+                            <i class="bi bi-instagram"></i> Instagram
+                        </a><br>
+                        <a href="https://youtube.com/laspuitas" class="text-light me-3" target="_blank">
+                            <i class="bi bi-youtube"></i> YouTube
+                        </a><br>
+                        <a href="https://tiktok.com/@laspuitas" class="text-light" target="_blank">
+                            <i class="bi bi-tiktok"></i> TikTok
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">                    <h5>Contacto</h5>
+                    <p>Email: info@laspuitas.com</p>
+                    <p>Tel: +5492664024390</p>
+                </div>
+            </div>
+            <hr class="mt-4">
+            <div class="row">
+                <div class="col text-center">
+                    <p class="mb-0">&copy; 2025 Las Puitas. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Inicializar AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Validación del formulario
+        (function () {
+            'use strict'
+            var forms = document.querySelectorAll('.needs-validation')
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voces de Las Puitas - Equipo de Doblaje</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>maria.jpg
+        :root {
+            --primary-color: #FF6B6B;
+            --secondary-color: #4ECDC4;
+            --dark-color: #2C3E50;
+            --light-color: #F7F9F9;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--light-color);
+        }
+
+        .voice-actor-card {
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            margin-bottom: 30px;
+        }
+
+        .voice-actor-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .whatsapp-btn {
+            background-color: #25D366;
+            color: white;
+            border-radius: 25px;
+            padding: 8px 20px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Las Puitas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="voces.html">Voces</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado -->
+    <header class="py-5 bg-dark text-white text-center">
+        <div class="container">
+            <h1 data-aos="fade-down">Nuestro Equipo de Voces</h1>
+            <p class="lead" data-aos="fade-up">Conoce a los talentosos artistas detrás de los personajes</p>
+        </div>    </header>
+
+    <!-- Sección de Actores de Voz -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Actor 1 -->
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="voice-actor-card card">
+                        <img src="placeholder-actor-1.jpg" class="card-img-top" alt="Actor 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Carlos Martínez</h5>
+                            <p class="card-text"><strong>Personaje:</strong> Papá Púa</p>
+                            <p class="card-text">Actor de doblaje con 15 años de experiencia. Especializado en voces graves y personajes paternales. Ha participado en más de 50 series animadas.</p>
+                            <a href="https://wa.me/+5492664XXXXXX" class="whatsapp-btn">
+                                <i class="bi bi-whatsapp"></i> Contactar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Actor 2 -->                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="voice-actor-card card">
+                        <img src="maria.jpg" class="card-img-top" alt="María Mora - Voz de Mamá Púa">
+                        <div class="card-body">
+                            <h5 class="card-title">María Mora</h5>
+                            <p class="card-text"><strong>Personaje:</strong> Mamá Púa</p>
+                            <p class="card-text">Actriz de doblaje bilingüe (español e inglés nativo). Su versatilidad vocal y dominio perfecto de ambos idiomas la hacen ideal para proyectos internacionales.</p>
+                            <a href="https://wa.me/+525624277770" class="whatsapp-btn">
+                                <i class="bi bi-whatsapp"></i> Contactar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Actor 3 -->                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="voice-actor-card card">
+                        <img src="daniela baeza.jpg" class="card-img-top" alt="Daniela Baeza - Voz de Ricky">
+                        <div class="card-body">
+                            <h5 class="card-title">Daniela Baeza</h5>
+                            <p class="card-text"><strong>Personaje:</strong> Ricky</p>
+                            <p class="card-text">Actriz de doblaje chilena con experiencia en voces juveniles. Su energía y versatilidad la hacen perfecta para interpretar personajes adolescentes dinámicos.</p>
+                            <a href="https://wa.me/+56950640358" class="whatsapp-btn">
+                                <i class="bi bi-whatsapp"></i> Contactar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <p class="mb-0">&copy; 2025 Las Puitas - Equipo de Voces</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>
