@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo de Animación - Las Puitas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Estilos personalizados -->
+    <style>
+        :root {
+            --primary-color: #FF6B6B;
+            --secondary-color: #4ECDC4;
+            --dark-color: #2C3E50;
+            --light-color: #F7F9F9;
+        }
+
+        body {
+            padding-top: 56px;
+            font-family: 'Arial', sans-serif;
+            background-color: var(--light-color);
+            color: var(--dark-color);
+        }
+
+        .navbar {
+            background-color: rgba(44, 62, 80, 0.95) !important;
+        }
+
+        .custom-btn {
+            background-color: var(--primary-color);
+            border: none;
+            padding: 10px 25px;
+            border-radius: 25px;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .custom-btn:hover {
+            background-color: var(--secondary-color);
+            transform: scale(1.05);
+        }
+
+        .team-header {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 100px 0;
+        }
+
+        .animator-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .animator-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .social-btn {
+            padding: 8px 16px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Las Puitas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="voces.html">Voces</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="directora.html">Directora</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="animadores.html">Animadores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#personajes">Personajes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#video">Video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado -->
+    <header class="team-header">
+        <div class="container">
+            <h1 class="display-4 text-center mb-4" data-aos="fade-down">Nuestro Equipo de Animación</h1>
+            <p class="lead text-center" data-aos="fade-up">Conoce a los talentosos artistas que dan vida a Las Puitas</p>
+        </div>
+    </header>
+
+    <!-- Sección de Animadores -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Esteban Federico Mansilla -->
+                <div class="col-md-6" data-aos="flip-left">
+                    <div class="animator-card text-center">
+                        <img src="foto de esteban federico mansilla.jpg" alt="Esteban Federico Mansilla" class="profile-image">
+                        <h3 class="mb-3">Esteban Federico Mansilla</h3>
+                        <h5 class="text-primary mb-3">Animador Principal</h5>
+                        <p class="mb-4">Especialista en animación de personajes y efectos visuales. Aporta vida y dinamismo a cada escena de Las Puitas.</p>
+                        <div class="d-flex justify-content-center gap-2">
+                            <a href="https://www.instagram.com/estevrock/" class="custom-btn social-btn d-inline-flex align-items-center gap-2">
+                                <i class="bi bi-instagram"></i> Instagram
+                            </a>
+                            <a href="https://wa.me/+5492664024390" class="custom-btn social-btn d-inline-flex align-items-center gap-2" style="background-color: #25D366;">
+                                <i class="bi bi-whatsapp"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Espacio para más animadores -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Las Puitas</h5>
+                    <p>Una serie animada para toda la familia.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Síguenos</h5>
+                    <div class="social-links">
+                        <a href="https://instagram.com/laspuitas" class="text-light me-3" target="_blank">
+                            <i class="bi bi-instagram"></i> Instagram
+                        </a><br>
+                        <a href="https://youtube.com/laspuitas" class="text-light me-3" target="_blank">
+                            <i class="bi bi-youtube"></i> YouTube
+                        </a><br>
+                        <a href="https://tiktok.com/@laspuitas" class="text-light" target="_blank">
+                            <i class="bi bi-tiktok"></i> TikTok
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p>Email: info@laspuitas.com</p>
+                    <p>Tel: +5492664024390</p>
+                </div>
+            </div>
+            <hr class="mt-4">
+            <div class="row">
+                <div class="col text-center">
+                    <p class="mb-0">&copy; 2025 Las Puitas. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>

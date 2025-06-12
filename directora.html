@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diana Gamboa - Directora de Las Puitas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Estilos personalizados -->
+    <style>
+        :root {
+            --primary-color: #FF6B6B;
+            --secondary-color: #4ECDC4;
+            --dark-color: #2C3E50;
+            --light-color: #F7F9F9;
+        }
+
+        body {
+            padding-top: 56px;
+            font-family: 'Arial', sans-serif;
+            background-color: var(--light-color);
+            color: var(--dark-color);
+        }
+
+        .navbar {
+            background-color: rgba(44, 62, 80, 0.95) !important;
+        }
+
+        .custom-btn {
+            background-color: var(--primary-color);
+            border: none;
+            padding: 10px 25px;
+            border-radius: 25px;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .custom-btn:hover {
+            background-color: var(--secondary-color);
+            transform: scale(1.05);
+        }
+
+        .director-hero {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 100px 0;
+        }
+
+        .director-image {
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .achievement-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .achievement-card:hover {
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Las Puitas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="voces.html">Voces</a>
+                    </li>                    <li class="nav-item">
+                        <a class="nav-link active" href="directora.html">Directora</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="animadores.html">Animadores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#personajes">Personajes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#video">Video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero de la Directora -->
+    <section class="director-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6" data-aos="fade-right">
+                    <img src="diana-gamboa.jpg" alt="Diana Gamboa" class="img-fluid director-image mb-4 mb-md-0">
+                </div>
+                <div class="col-md-6" data-aos="fade-left">                    <h1 class="display-4 mb-4">Diana Gamboa</h1>
+                    <h3 class="text-primary mb-4">Directora Creativa</h3>
+                    <p class="lead mb-4">Creadora y visionaria detrás de "Las Puitas", Diana Gamboa trae más de una década de experiencia en animación y narración visual.</p>
+                    <p class="mb-4">Con su perspectiva única y pasión por la música, Diana ha dado vida a esta historia familiar que combina el rock, el humor y los valores familiares en una serie animada inolvidable.</p>
+                    <div class="d-flex gap-3">
+                        <a href="https://www.instagram.com/ar.gadi.1?igsh=MTh1aGUwcmVwNTMxYw==" class="custom-btn d-inline-flex align-items-center gap-2" data-aos="fade-right">
+                            <i class="bi bi-instagram"></i> Instagram
+                        </a>
+                        <a href="https://wa.me/+57318 3974217" class="custom-btn d-inline-flex align-items-center gap-2" style="background-color: #25D366;" data-aos="fade-left">
+                            <i class="bi bi-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Trayectoria -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Trayectoria Profesional</h2>
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="achievement-card">
+                        <h4 class="mb-3">Formación</h4>
+                        <p>Graduada en Animación Digital y con estudios especializados en dirección cinematográfica.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="achievement-card">
+                        <h4 class="mb-3">Experiencia</h4>
+                        <p>Más de 10 años trabajando en proyectos de animación para importantes estudios internacionales.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="achievement-card">
+                        <h4 class="mb-3">Reconocimientos</h4>
+                        <p>Múltiples premios y reconocimientos en festivales de animación y cine.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    <!-- Sección de Visión -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center" data-aos="fade-up">
+                    <h2 class="mb-4">Visión Creativa</h2>
+                    <p class="lead mb-4">"Las Puitas nació de mi deseo de crear una serie que celebre la música, la familia y la autenticidad. Cada personaje representa diferentes aspectos de la pasión por el rock y cómo esta puede unir a una familia."</p>
+                    <p>- Diana Gamboa</p>
+                </div>
+            </div>
+        </div>    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Las Puitas</h5>
+                    <p>Una serie animada para toda la familia.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Síguenos</h5>
+                    <div class="social-links">
+                        <a href="https://instagram.com/laspuitas" class="text-light me-3" target="_blank">
+                            <i class="bi bi-instagram"></i> Instagram
+                        </a><br>
+                        <a href="https://youtube.com/laspuitas" class="text-light me-3" target="_blank">
+                            <i class="bi bi-youtube"></i> YouTube
+                        </a><br>
+                        <a href="https://tiktok.com/@laspuitas" class="text-light" target="_blank">
+                            <i class="bi bi-tiktok"></i> TikTok
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p>Email: info@laspuitas.com</p>
+                    <p>Tel: +5492664024390</p>
+                </div>
+            </div>
+            <hr class="mt-4">
+            <div class="row">
+                <div class="col text-center">
+                    <p class="mb-0">&copy; 2025 Las Puitas. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>
